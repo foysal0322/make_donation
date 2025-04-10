@@ -35,6 +35,7 @@ describe('Donation Flow', () => {
       .clear()
       .type('test')
       .should('be.visible');
+    cy.wait(3000)
     
     cy.get('#react-select-2-input', { timeout: 10000 })
       .type('{downarrow}')
